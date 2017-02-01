@@ -11,7 +11,7 @@
     <header class="page-header">
 
       <!-- Start: Container -->
-      <div class="container">
+      <div class="container clearfix">
 
         <div class="header-logo">
           <a href="/">
@@ -115,34 +115,33 @@
         <form action="/" method="post" class="filter-form">
 
           <div class="filter-form-group">
-            <label class="filter-form-lable">Сортировка:</lable>
+            <label class="filter-form-label">Сортировка:</label>
             <select name="sort">
               <option value="По популярности">По популярности</option>
               <option value="Сначала недорогие">Сначала недорогие</option>
               <option value="Сначала дорогие">Сначала дорогие</option>
               <option value="По жирности">По жирности</option>
             </select>
-          </label>
+          </div>
 
           <div class="filter-form-group">
-            <lable class="filter-form-lable">Цена:
-              <input class="min-price" type="text" value="100 руб."> -
-              <input class="max-price" type="text" value="500 руб.">
-            </lable>
+            <lable class="filter-form-label">Цена:</lable>
+            <input class="min-price" type="text" value="100 руб."> -
+            <input class="max-price" type="text" value="500 руб.">
             <div class="filter-form-range">
               <div class="range-controls">
-                  <div class="scale"><div class="bar"></div></div>
-                  <div class="toggle min-toggle"></div>
-                  <div class="toggle max-toggle"></div>
+                <div class="scale"><div class="bar"></div></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
               </div>
             </div>
           </div>
 
           <div class="filter-form-group">
-            <lable class="filter-form-lable">Жирность:</lable>
+            <lable class="filter-form-label">Жирность:</lable>
             <input type="radio" name="fat-content" value="0%" id="radio-1">
             <label for="radio-1">0%</label>
-            <input type="radio" name="fat-content" value="до 10%" id="radio-2">
+            <input type="radio" name="fat-content" value="до 10%" id="radio-2" checked>
             <label for="radio-2">до 10%</label>
             <input type="radio" name="fat-content" value="до 30%" id="radio-3">
             <label for="radio-3">до 30%</label>
@@ -151,7 +150,7 @@
           </div>
 
           <div class="filter-form-group">
-            <lable class="filter-form-lable">Наполнители:</lable>
+            <lable class="filter-form-label">Наполнители:</lable>
             <input type="checkbox" id="checkbox-1" name="filler-1" value="1" checked>
             <label for="checkbox-1">Шоколадные</label>
             <input type="checkbox" id="checkbox-2" name="filler-2" value="2" checked>
@@ -172,7 +171,7 @@
         <!-- End: Filter-form -->
 
         <!-- Start: Product-items -->
-        <div class="product-items">
+        <div class="product-items clearfix">
 
           <div class="product-item">
             <img src="img/product-item-1.png" width="267" height="267" alt="">
@@ -263,7 +262,7 @@
 
         <!-- Start: Pagination -->
         <ul class="pagination">
-           <li><a href="#">&lsaquo;</a></li>
+          <li><a href="#">&lsaquo;</a></li>
           <li><a href="#" class="active">1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
@@ -283,7 +282,7 @@
     <footer class="page-footer">
 
       <!-- Start: Container -->
-      <div class="container">
+      <div class="container clearfix">
 
         <div class="page-footer-social">
           <a class="social-btn social-btn-tw" href="#">Твиттер</a>
@@ -305,9 +304,8 @@
           <div class="page-footer-logo">
             <img src="img/footer-logo.png" width="108" height="38" align="HTML Academy">
           </div>
+          <p>Сделано в <a href="https://htmlacademy.ru" class="page-footer-link">HTML Academy</a>&copy; 2017</p>
         </div>
-        <p>Сделано в <a href="https://htmlacademy.ru" class="page-footer-link">HTML Academy</a>&copy; 2017</p>
-
 
       </div>
       <!-- End: Container -->
