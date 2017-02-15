@@ -9,6 +9,12 @@
   </head>
   <body>
 
+    <!-- Start: input for Promo-slider -->
+    <input type="radio" id="promo-slider-btn-1" name="promo-slider-toggle" checked>
+    <input type="radio" id="promo-slider-btn-2" name="promo-slider-toggle">
+    <input type="radio" id="promo-slider-btn-3" name="promo-slider-toggle">
+    <!-- End: input for Promo-slider -->
+
     <!-- Start: Page-wrapper -->
     <div class="page-wrapper">
 
@@ -112,33 +118,22 @@
 
           <!-- Start: Promo-slider -->
           <div class="promo-slider">
-            <input type="radio" id="promo-slider-btn-1" name="promo-slider-toggle" checked>
-            <input type="radio" id="promo-slider-btn-2" name="promo-slider-toggle">
-            <input type="radio" id="promo-slider-btn-3" name="promo-slider-toggle">
+            <div class="promo-slider-item" id="promo-slider-item-1">
+              <p class="promo-slider-title">Крем-брюле и пломбир с малиновым джемом</p>
+              <a href="#" class="promo-slider-btn btn">Давайте оба!</a>
+            </div>
+            <div class="promo-slider-item" id="promo-slider-item-2">
+              <p class="promo-slider-title">Шоколадный пломбир и лимонный сорбет </p>
+              <a href="#" class="promo-slider-btn btn">Давайте оба!</a>
+            </div>
+            <div class="promo-slider-item" id="promo-slider-item-3">
+              <p class="promo-slider-title">Пломбир с помадкой и клубничный щербет</p>
+              <a href="#" class="promo-slider-btn btn">Давайте оба!</a>
+            </div>
             <div class="promo-slider-controls">
               <label for="promo-slider-btn-1"></label>
               <label for="promo-slider-btn-2"></label>
               <label for="promo-slider-btn-3"></label>
-            </div>
-            <div class="promo-slider-items">
-              <div class="promo-slider-item">
-                <div class="promo-slider-box">
-                  <p class="promo-slider-title">Крем-брюле и пломбир с малиновым джемом</p>
-                  <a href="#" class="promo-slider-btn btn">Давайте оба!</a>
-                </div>
-              </div>
-              <div class="promo-slider-item">
-                <div class="promo-slider-box">
-                  <p class="promo-slider-title">Шоколадный пломбир и лимонный сорбет </p>
-                  <a href="#" class="promo-slider-btn btn">Давайте оба!</a>
-                </div>
-              </div>
-              <div class="promo-slider-item">
-                <div class="promo-slider-box">
-                  <p class="promo-slider-title">Пломбир с помадкой и клубничный щербет</p>
-                  <a href="#" class="promo-slider-btn btn">Давайте оба!</a>
-                </div>
-              </div>
             </div>
 
           </div>
@@ -165,7 +160,7 @@
           <!-- Start: Product-items -->
           <div class="product-items">
 
-            <div class="product-item product-item-hover">
+            <div class="product-item">
               <img src="img/product-item-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               <span class="product-item-remark">Хит</span>
               <p class="product-item-price">310 &#8381;/кг</p>
@@ -231,25 +226,25 @@
           </div>
           <!-- End: News-and-subscribe -->
 
-          <!-- Start: Map -->
-          <div class="map">
-            <div class="map-layout container">
-              <div class="map-marker"></div>
-              <div class="map-contacts">
-                <h3 class="map-contacts-title">Адрес главного офиса и офлайн магазина:</h3>
-                <p class="map-contacts-text">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-
-                <h3 class="map-contacts-title">Для заказов по телефону:</h3>
-                <p class="map-contacts-text">8 812 450-25-25 <span>(с 10 до 20 ежедневно)</span></p>
-
-                <a href="#" class="btn">Форма обратной связи</a>
-              </div>
-            </div>
-          </div>
-          <!-- End: Map -->
-
         </div>
         <!-- End: Container -->
+
+        <!-- Start: Map -->
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1998.6068850692152!2d30.320588615867354!3d59.93866508187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8gMTkvOCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!5e0!3m2!1sru!2sua!4v1487146250686" width="1200" height="428" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <div class="map-contacts">
+              <h3 class="map-contacts-title">Адрес главного офиса и офлайн магазина:</h3>
+              <p class="map-contacts-text">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+
+              <h3 class="map-contacts-title">Для заказов по телефону:</h3>
+              <p class="map-contacts-text">8 812 450-25-25 <span>(с 10 до 20 ежедневно)</span></p>
+
+              <a href="#" class="btn map-contacts-btn">Форма обратной связи</a>
+            </div>
+
+        </div>
+        <!-- End: Map -->
 
       </main>
       <!-- End: Main -->
@@ -293,17 +288,20 @@
     <!-- End: Page-wrapper -->
 
     <!-- Start: Feedback-form -->
-    <div class="feedback-form-wrapper">
+    <div class="feedback-form-popup">
       <h3 class="feedback-form-title">Мы обязательно вам ответим!</h3>
       <form action="/" method="post" class="feedback-form">
         <a href="#" class="feedback-form-close">Закрыть</a>
-        <input type="text" name="name" placeholder="Как вас зовут?">
-        <input type="email" name="email" placeholder="Ваша почта для ответа?">
+        <input type="text" name="name" placeholder="Как вас зовут?" required>
+        <input type="email" name="email" placeholder="Ваша почта для ответа?" required>
         <textarea name="text" placeholder="Напишите что-нибудь..."></textarea>
-        <button type="button" class="btn">Отправить</button>
+        <button type="submit" class="btn feedback-form-btn">Отправить</button>
       </form>
     </div>
     <!-- End: Feedback-form -->
 
+    <div class="feedback-form-overlay"></div>
+
+    <script src="js/popup.js"></script>
   </body>
 </html>
