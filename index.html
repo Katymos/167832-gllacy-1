@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
@@ -54,8 +54,8 @@
             <div class="user-block-search">
               <button type="button" class="user-block-btn user-block-search-btn">Поиск</button>
               <form action="/" method="post" class="user-block-form">
-                <div class="label-transform">
-                  <input type="search" name="search" required>
+                <div class="label-transform label-transform-search">
+                  <input type="search" name="search" class="inner-transform-element" required>
                   <label>Что ищем?</label>
                 </div>
               </form>
@@ -65,11 +65,11 @@
               <button type="button" class="user-block-btn user-block-login-btn">Вход</button>
               <form action="/" method="post" class="user-block-form">
                 <div class="label-transform">
-                  <input type="email" name="email" required>
+                  <input type="email" name="email" class="inner-transform-element" required>
                   <label>Электронная почта</label>
                 </div>
                 <div class="label-transform">
-                  <input type="password" name="password" required>
+                  <input type="password" name="password" class="inner-transform-element" required>
                   <label>Пароль</label>
                 </div>
                 <input type="submit" value="Войти" class="btn btn-left">
@@ -201,8 +201,8 @@
               <div class="subscribe-inner">
                 <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <form action="/" method="post" class="subscribe-form">
-                  <div class="label-transform">
-                    <input type="email" name="email" required>
+                  <div class="label-transform label-transform-subscribe">
+                    <input type="email" name="email" class="inner-transform-element" required>
                     <label>Электронная почта</label>
                   </div>
                   <button type="submit" name="subscribe" class="btn">Отправить</button>
@@ -227,7 +227,7 @@
               <h3 class="map-contacts-title">Для заказов по телефону:</h3>
               <p class="map-contacts-text">8 812 450-25-25 <span>(с 10 до 20 ежедневно)</span></p>
 
-              <a href="#" class="btn map-contacts-btn">Форма обратной связи</a>
+              <a href="form.html" class="btn map-contacts-btn">Форма обратной связи</a>
             </div>
 
         </div>
@@ -251,7 +251,7 @@
 
           <div class="page-footer-links">
             <ul class="page-footer-links-list">
-              <li><a href="#">Для поставщиков</a></li>
+              <li><a href="#" class="page-footer-link-heart">Для поставщиков</a></li>
               <li><a href="#">Наши документы</a></li>
               <li><a href="#">О производстве</a></li>
               <li><a href="#">Экологические стандарты</a></li>
@@ -280,15 +280,15 @@
       <form action="/" method="post" class="feedback-form">
         <a href="#" class="feedback-form-close">Закрыть</a>
         <div class="label-transform">
-          <input type="text" name="name" required>
+          <input type="text" name="name" class="inner-transform-element" required>
           <label>Как вас зовут?</label>
         </div>
         <div class="label-transform">
-          <input type="email" name="email" required>
+          <input type="email" name="email" class="inner-transform-element" required>
           <label>Ваша почта для ответа?</label>
         </div>
-        <div class="label-transform-textarea">
-          <textarea name="text" required></textarea>
+        <div class="label-transform label-transform-textarea">
+          <textarea name="text" class="inner-transform-element" required></textarea>
           <label>Напишите что-нибудь...</label>
         </div>
         <button type="submit" class="btn feedback-form-btn">Отправить</button>
